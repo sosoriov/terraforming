@@ -9,7 +9,7 @@ variable tags {
 variable node_pool_name {}
 
 variable "node_pool_size" {
-  default = "s-2vcpu-2gb"
+  default = "s-1vcpu-2gb"
 }
 
 variable "node_pool_node_count" {

@@ -9,7 +9,6 @@ provider "digitalocean" {
 module "kubernetes" {
   source = "./kubernetes"
 
-
   kubernetes_version = "${var.kubernetes_version}"
   name = "${var.kubernetes_cluster_name}"
   region = "${var.cluster_region}"
