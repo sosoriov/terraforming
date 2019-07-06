@@ -13,6 +13,7 @@ resource "digitalocean_kubernetes_cluster" "kubernetes_id" {
 
 resource "local_file" "kubeconfig" {
   content  = yamlencode(digitalocean_kubernetes_cluster.kubernetes_id.kube_config.0.raw_config)
+  # make sure the "~/.kube" paths exists
   filename = pathexpand("~/.kube/config")
 
   depends_on = [digitalocean_kubernetes_cluster.kubernetes_id]
