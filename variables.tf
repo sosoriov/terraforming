@@ -1,6 +1,6 @@
 variable "kubernetes_version" {
   description = "Kubernetes Version for DO pool"
-  default = "1.14.1-do.4"
+  default = "1.14.3-do.0"
 }
 
 variable "kubernetes_cluster_name" {
@@ -26,7 +26,7 @@ variable "node_capacity" {
 }
 variable "number_of_nodes" {
   description = "Number of worker nodes"
-  default = "2"
+  default = "1"
 }
 
 
